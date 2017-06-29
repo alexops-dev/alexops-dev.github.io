@@ -211,6 +211,8 @@ img,object,embed {
 /* BUTTONS */
 
 .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: inline-block;
     border: none;
     border-radius: 4px;
@@ -221,7 +223,8 @@ img,object,embed {
     font-size: 16px;
     text-transform: uppercase;
     cursor: pointer;
-    width: 250px;
+    width: 300px;
+    min-width: 300px;
     height: 75px;
     padding-right: : 0px
 }
