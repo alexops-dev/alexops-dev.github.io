@@ -223,7 +223,9 @@ img,object,embed {
     cursor: pointer;
     width: 250px;
     height: 75px;
+    padding: 0;
 }
+
 
 .git {
     background-color: #4CAF50; 
