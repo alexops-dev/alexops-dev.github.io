@@ -23,7 +23,8 @@ hr.style2{
 
 #distance {
   font-size: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -104,8 +105,8 @@ img,object,embed {
 
 #writeMe {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     font-size: 12pt;
     font-weight: 200;
     float: none;
