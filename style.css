@@ -114,12 +114,12 @@ img,object,embed {
 }
 
 
-#distance a:link {text-decoration: none;
-                color: #ffffff;}
+#distance a:link {
+                color: #4CAF50;}
           a:visited {text-decoration: none;
-                color: #123456;}
+                color: #4CAF50;}
           a:hover {text-decoration: none;
-                color: #ffffff;}
+                color: #4CAF50;}
           a:active {text-decoration: none;}
 
 
