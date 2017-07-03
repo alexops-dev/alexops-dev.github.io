@@ -23,6 +23,7 @@
             var dist = google.maps.geometry.spherical.computeDistanceBetween(beuth, currentPosition);
 
             document.getElementById("standortContent").textContent = currentPosition.lat().toString() + ", " + currentPosition.lng().toString();
+            document.getElementById("standortContent").textContent = position.coords.accuracy.toFixed(2);
             document.getElementById("entfernungContent").textContent = dist.toFixed(2) + " meters";
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found.');
