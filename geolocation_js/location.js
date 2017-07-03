@@ -2,9 +2,9 @@
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
-      var beuth = new google.maps.LatLng(52.5453206, 13.3546582);
       var map, infoWindow;
       function initMap() {
+        var beuth = new google.maps.LatLng(52.5453206, 13.3546582);
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 52.5, lng: 13.4},
           zoom: 12
