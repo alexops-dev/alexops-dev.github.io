@@ -114,13 +114,13 @@ img,object,embed {
 }
 
 
-#writeMe a:link {text-decoration: none;
+#distance a:link {text-decoration: none;
                 color: #ffffff;}
-      a:visited {text-decoration: none;
-               color: #123456;}
-      a:hover {text-decoration: none;
-             color: #ffffff;}
-      a:active {text-decoration: none;}
+          a:visited {text-decoration: none;
+                color: #123456;}
+          a:hover {text-decoration: none;
+                color: #ffffff;}
+          a:active {text-decoration: none;}
 
 
 .overlay:after {
