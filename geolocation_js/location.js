@@ -20,7 +20,7 @@
             };
 
             var currentPosition = new google.maps.LatLng(pos.lat, pos.lng);
-            var dist = google.maps.geometry.spherical.computeDistanceBetween(beuth, currentPosition));
+            var dist = google.maps.geometry.spherical.computeDistanceBetween(beuth, currentPosition);
 
             document.getElementById("standortContent").textContent = currentPosition.lat().toString() + ", " + currentPosition.lng().toString();
             document.getElementById("entfernungContent").textContent = dist.toString() + " meters";
