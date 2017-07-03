@@ -5,6 +5,14 @@
     width: 50%
  }
       
+#mapText {
+	font-family: Verdana;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: green;
+}
+
  /* Optional: Makes the sample page fill the window. */
  html, body {
     align-items: center;
