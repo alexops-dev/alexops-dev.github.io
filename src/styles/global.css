@@ -100,3 +100,38 @@ a {
   margin-bottom: 12px;
   display: inline-block;
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 100px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px) brightness(1);
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+/* dark overlay for readability */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 16, 32, 0.8) 70%,
+    rgba(11, 16, 32, 0.95) 80%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
