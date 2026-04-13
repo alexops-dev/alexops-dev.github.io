@@ -146,3 +146,37 @@ a {
   flex-wrap: wrap;
   gap: 10px; 
 }
+
+.project-links {
+  margin-top: 24px;           /* space from text */
+  display: flex;
+  justify-content: center;    /* center horizontally */
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;                  /* space between icon + text */
+  padding: 12px 20px;
+}
+
+.github-button svg {
+  display: block;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 350px;
+  gap: 18px;
+}
+
+
+/* THIS pushes bottom content down */
+.project-card-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
