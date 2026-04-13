@@ -1,32 +1,39 @@
+---
+import { projects } from '../data/projects';
+---
+
 <section id="projects">
   <div class="container">
     <span class="eyebrow">Projects</span>
-    <h2>Selected work</h2>
+    <h2>Selected Projects</h2>
+    <p style="margin-bottom: 32px; max-width: 760px;">
+      A curated set of public projects across cloud-native engineering, embedded systems,
+      backend development, and applied software architecture.
+    </p>
 
     <div class="grid grid-2">
-      <article class="card">
-        <h3>AWS & Terraform Infrastructure</h3>
-        <p>
-          Infrastructure work focused on AWS services, reusable Terraform modules,
-          operational improvements, and deployment safety.
-        </p>
-      </article>
+      {projects.map((project) => (
+        <article class="card project-card">
+          <div class="project-card-top">
+            <h3>{project.title}</h3>
+            {project.featured && <span class="project-badge">Featured</span>}
+          </div>
 
-      <article class="card">
-        <h3>CI/CD with GitHub Actions</h3>
-        <p>
-          Workflow design, migration, troubleshooting, and deployment automation
-          for production-oriented engineering teams.
-        </p>
-      </article>
+          <p>{project.description}</p>
 
-      <article class="card">
-        <h3>Backend & Integration Work</h3>
-        <p>
-          Python-based backend development, APIs, test automation, and integration
-          between services and data sources.
-        </p>
-      </article>
+          <div class="project-tags">
+            {project.stack.map((item) => (
+              <span class="project-tag">{item}</span>
+            ))}
+          </div>
+
+          <div class="project-links">
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" class="button secondary">
+              View on GitHub
+            </a>
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </section>

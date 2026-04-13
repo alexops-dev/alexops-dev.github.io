@@ -42,7 +42,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   letter-spacing: -0.03em;
 }
 
@@ -104,7 +104,10 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 120px 0 100px;
+  padding: 56px 0 52px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
 }
 
 .hero-bg {
@@ -113,20 +116,21 @@ a {
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(3px) brightness(1);
-  transform: scale(1.1);
+  background-repeat: no-repeat;
+  filter: blur(2px) brightness(0.45);
+  transform: scale(1.04);
   z-index: 0;
 }
 
-/* dark overlay for readability */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(11, 16, 32, 0.8) 70%,
-    rgba(11, 16, 32, 0.95) 80%
+    rgba(11, 16, 32, 0.72) 0%,
+    rgba(11, 16, 32, 0.82) 55%,
+    rgba(11, 16, 32, 0.92) 100%
   );
   z-index: 1;
 }
@@ -134,4 +138,11 @@ a {
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 860px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
 }
