@@ -7,7 +7,7 @@ import { projects } from '../data/projects';
     <span class="eyebrow">Projects</span>
     <h2>Selected Projects</h2>
     <p style="margin-bottom: 32px; max-width: 760px;">
-      A curated set of public projects across cloud-native engineering, embedded systems,
+      A selected set of public projects across cloud-native engineering, embedded systems,
       backend development, and applied software architecture.
     </p>
 
@@ -16,7 +16,7 @@ import { projects } from '../data/projects';
         <article class="card project-card">
           <div class="project-card-top">
             <h3>{project.title}</h3>
-            {project.featured && <span class="project-badge">Featured</span>}
+            {project.category && <span class="project-badge">{project.category}</span>}
           </div>
 
           <p>{project.description}</p>

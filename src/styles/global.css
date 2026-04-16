@@ -6,6 +6,7 @@
   --text: #edf2ff;
   --muted: #aab6d3;
   --accent: #83a6ff;
+  --composite: #F5B027;
   --max: 1120px;
   --radius: 20px;
 }
@@ -168,10 +169,12 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 350px;
-  gap: 18px;
+  min-height: 280px;   /* ↓ smaller */
+  gap: 14px;           /* ↓ tighter spacing */
+  padding-left: 20px;       /* ↓ reduce internal padding */
+  padding-top: 20px;       /* ↓ reduce internal padding */
+  padding-bottom: 10px;       /* ↓ reduce internal padding */
 }
-
 
 /* THIS pushes bottom content down */
 .project-card-bottom {
@@ -179,4 +182,22 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.project-badge {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.project-tag {
+  font-size: 0.72rem;  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.project-card-top {
+  color: var(--composite);
 }
