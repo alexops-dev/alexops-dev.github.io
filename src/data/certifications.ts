@@ -5,7 +5,7 @@ export const certifications = [
     description:
       'Experience designing and supporting AWS-based infrastructure, ECS services, CI/CD workflows, IAM configurations, and production cloud environments.',
     skills: ['AWS', 'ECS', 'IAM', 'Terraform', 'CI/CD'],
-    logo: '/images/certs/aws.png',
+    logo: '/images/certs/aws.jpeg',
     credentialUrl: 'https://www.credly.com/',
   },
 
@@ -15,7 +15,7 @@ export const certifications = [
     description:
       'Practical experience building reusable Terraform modules, infrastructure automation, environment provisioning, and infrastructure lifecycle management.',
     skills: ['Terraform', 'IaC', 'AWS', 'Automation'],
-    logo: '/images/certs/terraform.png',
+    logo: '/images/certs/terraform.jpeg',
     credentialUrl: 'https://www.credly.com/',
   },
 
@@ -25,7 +25,7 @@ export const certifications = [
     description:
       'Hands-on Linux administration and shell experience used in CI/CD pipelines, debugging, automation, and containerized environments.',
     skills: ['Linux', 'Bash', 'Containers', 'DevOps'],
-    logo: '/images/certs/linux.png',
+    logo: '/images/certs/linux.jpeg',
     credentialUrl: 'https://www.credly.com/',
   },
 
@@ -35,7 +35,7 @@ export const certifications = [
     description:
       'Understanding of Azure cloud services, DevOps concepts, networking, identity management, and cloud architecture fundamentals.',
     skills: ['Azure', 'Cloud', 'DevOps'],
-    logo: '/images/certs/azure.png',
+    logo: '/images/certs/microsoft.jpeg',
     credentialUrl: 'https://learn.microsoft.com/',
   },
 ];
