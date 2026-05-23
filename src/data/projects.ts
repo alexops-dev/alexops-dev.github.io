@@ -45,7 +45,7 @@ export const projects: Project[] = [
     stack: ['Python', 'Machine Learning', 'VR', 'PyTorch'],
     githubUrl: 'https://github.com/alexops-dev/6DOF-Tracking-System',
   },
-{
+  {
     title: 'Vending System Simulation',
     category: ["Software Engineering Project"],
     description: `
@@ -57,4 +57,18 @@ export const projects: Project[] = [
     stack: ['C++', 'Qt', 'GUI', 'PyTorch', 'Testing'],
     githubUrl: 'https://github.com/alexops-dev/Real-Time-Vending-System-Simulation',
   },
+  {
+    title: 'CookBookIdeas',
+    category: ["Software Engineering Project"],
+    description: `
+        This project is a web application designed to manage and display recipes,
+        with the backend handling data storage and retrieval and the frontend providing 
+        a user interface for creating and viewing recipe data. 
+        The backend is built using FastAPI, a modern web framework for building APIs with Python, 
+        while the frontend is developed using Angular.
+       `,
+    stack: ['FastAPI', 'Angular', 'Python', 'Fullstack'],
+    githubUrl: 'https://github.com/alexops-dev/CookBookIdeas',
+  },
+
 ];
