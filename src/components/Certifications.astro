@@ -1,0 +1,52 @@
+---
+import { certifications } from '../data/certifications';
+---
+
+<section id="certifications">
+  <div class="container">
+    <span class="eyebrow">Certifications</span>
+
+    <h2>Professional Certifications</h2>
+
+    <p style="margin-bottom: 36px; max-width: 760px;">
+      Certifications and technologies used in enterprise environments,
+      cloud infrastructure, CI/CD automation, and production engineering.
+    </p>
+
+    <div class="certifications-list">
+      {certifications.map((cert) => (
+        <article class="cert-card">
+          <div class="cert-logo-wrapper">
+            <img
+              src={cert.logo}
+              alt={cert.issuer}
+              class="cert-logo"
+            />
+          </div>
+
+          <div class="cert-content">
+            <h3>{cert.title}</h3>
+
+            <div class="cert-issuer">
+              {cert.issuer}
+            </div>
+
+            <p>{cert.description}</p>
+
+          </div>
+
+          <div class="cert-actions">
+            <a
+              href={cert.credentialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button secondary cert-button"
+            >
+              Credential
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
