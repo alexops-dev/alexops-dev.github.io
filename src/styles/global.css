@@ -211,31 +211,24 @@ a {
 }
 
 .cert-card {
-  display: flex;
-  flex-direction: column;
-
-  height: 100%;
-
   background: rgba(19, 26, 46, 0.88);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
 
-  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+
+  padding: 22px;
 
   transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
 }
 
-/* subtle hover animation */
 .cert-card:hover {
-  transform: translateY(-4px);
-
-  border-color: rgba(131, 166, 255, 0.28);
-
+  transform: translateY(-3px);
+  border-color: rgba(131, 166, 255, 0.22);
   box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.28);
+    0 10px 30px rgba(0,0,0,0.22);
 }
 
 .cert-logo-wrapper {
