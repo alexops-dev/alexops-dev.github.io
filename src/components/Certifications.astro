@@ -16,9 +16,16 @@ import { certifications } from '../data/certifications';
     <div class="certifications-list">
       {certifications.map((cert) => (
         <article class="cert-card">
-            <div class="cert-content">
 
-                <div class="cert-header">
+        <div class="cert-badge-wrapper">
+            <img
+            src={cert.badge}
+            alt={cert.title}
+            class="cert-badge-image"
+            />
+        </div>
+
+        <div class="cert-header">
 
                     <img
                     src={cert.logo}
