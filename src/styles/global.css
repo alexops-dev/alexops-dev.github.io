@@ -206,8 +206,9 @@ a {
 
 .certifications-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center;
+  gap: 28px;
 }
 
 .cert-card {
