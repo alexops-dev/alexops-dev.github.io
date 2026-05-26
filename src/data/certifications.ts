@@ -21,7 +21,7 @@ export const certifications = [
 
   {
     title: 'Linux Essentials Certification',
-    issuer: 'Linux Professional Institute (LPI)',
+    issuer: 'Linux Professional Institute',
     description:
       'Hands-on Linux administration and shell experience used in CI/CD pipelines, debugging, automation, and containerized environments.',
     skills: ['Linux', 'Bash', 'Containers', 'DevOps', 'Automation'],
@@ -49,7 +49,7 @@ export const certifications = [
   },
   {
     title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services (AWS)',
+    issuer: 'Amazon Web Services',
     description:
       'Understanding of AWS Cloud services, networking, identity management, and cloud architecture fundamentals.',
     skills: ['AWS', 'Cloud', 'Hybrid'],
