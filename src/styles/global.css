@@ -6,6 +6,7 @@
   --text: #edf2ff;
   --muted: #aab6d3;
   --accent: #83a6ff;
+  --composite: #F5B027;
   --max: 1120px;
   --radius: 20px;
 }
@@ -42,7 +43,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   letter-spacing: -0.03em;
 }
 
@@ -104,7 +105,10 @@ a {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 120px 0 100px;
+  padding: 56px 0 52px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
 }
 
 .hero-bg {
@@ -113,20 +117,21 @@ a {
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(3px) brightness(1);
-  transform: scale(1.1);
+  background-repeat: no-repeat;
+  filter: blur(2px) brightness(0.45);
+  transform: scale(1.04);
   z-index: 0;
 }
 
-/* dark overlay for readability */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(11, 16, 32, 0.8) 70%,
-    rgba(11, 16, 32, 0.95) 80%
+    rgba(11, 16, 32, 0.72) 0%,
+    rgba(11, 16, 32, 0.82) 55%,
+    rgba(11, 16, 32, 0.92) 100%
   );
   z-index: 1;
 }
@@ -134,4 +139,182 @@ a {
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 860px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.project-links {
+  margin-top: 24px;           /* space from text */
+  display: flex;
+  justify-content: center;    /* center horizontally */
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;                  /* space between icon + text */
+  padding: 12px 20px;
+}
+
+.github-button svg {
+  display: block;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 280px;   /* ↓ smaller */
+  gap: 14px;           /* ↓ tighter spacing */
+  padding-left: 20px;       /* ↓ reduce internal padding */
+  padding-top: 20px;       /* ↓ reduce internal padding */
+  padding-bottom: 10px;       /* ↓ reduce internal padding */
+}
+
+/* THIS pushes bottom content down */
+.project-card-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-badge {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.project-tag {
+  font-size: 0.72rem;  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.project-card-top {
+  color: var(--composite);
+}
+
+/* CERTIFICATIONS */
+
+.certifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.cert-card {
+  background: rgba(19, 26, 46, 0.88);
+
+  border: 1px solid var(--line);
+  border-radius: 18px;
+
+  padding: 22px;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(131, 166, 255, 0.22);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.22);
+}
+
+.cert-logo {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.03);
+  padding: 4px;
+}
+
+.cert-content {
+  flex: 1;
+}
+
+.cert-content h3 {
+  margin: 0 0 4px;
+  font-size: 1.08rem;
+  line-height: 1.25;
+  color: #f6c35b;
+}
+
+.cert-issuer {
+  color: #8ea2ff;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.cert-content p {
+  margin-bottom: 18px;
+}
+
+.cert-actions {
+  margin-top: 22px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cert-button {
+  padding: 9px 16px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  opacity: 0.88;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cert-button:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* responsive */
+
+@media (max-width: 860px) {
+  .cert-card {
+    flex-direction: column;
+  }
+}
+
+.cert-content h3 {
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: #f6c35b;
+}
+
+
+.cert-description {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.cert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.cert-title-group {
+  display: flex;
+  flex-direction: column;
 }
