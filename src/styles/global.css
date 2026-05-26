@@ -220,16 +220,22 @@ a {
   padding: 22px;
 
   transition:
+    background 0.22s ease,
     transform 0.22s ease,
     border-color 0.22s ease,
     box-shadow 0.22s ease;
 }
 
 .cert-card:hover {
+  background: rgba(28, 37, 64, 0.96);
   transform: translateY(-3px);
   border-color: rgba(131, 166, 255, 0.22);
   box-shadow:
     0 10px 30px rgba(0,0,0,0.22);
+}
+
+.cert-card:hover h3 {
+  color: #ffd27a;
 }
 
 .cert-logo {
