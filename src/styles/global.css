@@ -238,6 +238,11 @@ a {
   color: #ffd27a;
 }
 
+.cert-card:hover .cert-button {
+  border-color: rgba(131,166,255,0.28);
+  background: rgba(255,255,255,0.03);
+}
+
 .cert-logo {
   width: 44px;
   height: 44px;
